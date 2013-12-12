@@ -31,7 +31,7 @@ public class TrieTest {
 	public void test2() {
 		Trie<Character, String> trie = new Trie<Character, String>();
 		List<Character> elements = new ArrayList<Character>();
-		String[] lines = { "大数据时代", "大数据挖掘","大数据与云计算", "正则指引", "正则表达式", "大数据算法" };
+		String[] lines = { "大数据时代", "大数据挖掘","大数据与云计算", "正则指引","正则指引手册", "正则表达式", "大数据算法" };
 		for (String line : lines) {
 			for (char c : line.toCharArray()) {
 				elements.add(c);
