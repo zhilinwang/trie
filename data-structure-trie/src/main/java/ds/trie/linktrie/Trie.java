@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory;
  */
 public class Trie<K, V> {
 	TrieNode<K, V> root = null;
-	Logger LOG = LoggerFactory.getLogger(this.getClass());
+	private static Logger LOG = LoggerFactory.getLogger(Trie.class);
 
 	public Trie() {
 		super();
@@ -116,6 +116,12 @@ public class Trie<K, V> {
 		pile.getChildren().get(trieKey).getChildren().clear();
 		pile.getChildren().remove(trieKey);
 		
+	}
+	
+	
+
+	public TrieNode<K, V> getRoot() {
+		return root;
 	}
 
 	/**

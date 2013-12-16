@@ -11,6 +11,8 @@ import java.util.HashMap;
 public class TrieNode<K,V> {
 	private V value;
 	private K key;
+	private TrieNode<K,V> fail=null;
+	
 	
 	private HashMap<K,TrieNode<K,V>> children=new HashMap<K,TrieNode<K,V>>();
 	
@@ -28,9 +30,22 @@ public class TrieNode<K,V> {
 	public void setValue(V value) {
 		this.value = value;
 	}
+	
+	
 	public K getKey() {
 		return key;
 	}
+	
+	
+	
+	public TrieNode<K, V> getFail() {
+		return fail;
+	}
+	
+	public void setFail(TrieNode<K, V> fail) {
+		this.fail = fail;
+	}
+	
 	public HashMap<K, TrieNode<K, V>> getChildren() {
 		return children;
 	}
@@ -82,8 +97,12 @@ public class TrieNode<K,V> {
 	 * test auxiliary function
 	 */
 	public void print(){
-		System.out.println("children level:");
+		System.out.print("children level:");
 		System.out.println(this.key);
+		System.out.print("Fail Node Key:");
+		if(this.fail!=null)
+		System.out.println(this.fail.key);
+		System.out.print("node value:");
 		if(this.value!=null) System.out.println(this.value);
 		if(this.getChildren().size()!=0)
 		{

@@ -13,6 +13,7 @@ import ds.trie.linktrie.Trie;
 public class TrieFactory {
 	public static Logger LOG = LoggerFactory.getLogger(TrieFactory.class);
 
+	@SuppressWarnings("rawtypes")
 	public static synchronized Trie constructTrieFromFile(String path,
 			String delimiter) throws IOException {
 		BufferedReader br = new BufferedReader(FileReaderFacade.readFile(path));
