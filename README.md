@@ -1,4 +1,8 @@
 trie
 ====
 
-simple java version of trie.
+This is a java implementation of Trie and AC algorithms.
+
+Tire is used to construct goto structure.
+
+
