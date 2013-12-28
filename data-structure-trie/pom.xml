@@ -10,4 +10,5 @@
   		<version>1.7.5</version>
   	</dependency>
   </dependencies>
+  <name>Trie and AC algorithm.</name>
 </project>

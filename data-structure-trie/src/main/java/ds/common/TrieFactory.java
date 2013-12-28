@@ -23,6 +23,9 @@ public class TrieFactory {
 		while ((line = br.readLine()) != null) {
 			String[] words = line.split(delimiter);
 			for (String w : words) {
+				/**
+				 * here should replace regular expression to make it support more language like Chinese.
+				 */
 				if (w.trim().matches("[a-zA-Z]*")) {
 					for (char c : w.toCharArray()) {
 						elements.add(Character.valueOf(c));

@@ -18,7 +18,7 @@ public class TrieFactoryTest {
 	@Test
 	public void test() {
 		try {
-			Trie<Character,String> trie=TrieFactory.constructTrieFromFile("src/test/resources/keyword.txt", "\t");
+			Trie<Character,String> trie=TrieFactory.constructTrieFromFile("src/test/resources/wordsEn.txt", "\t");
 			//trie.print();
 			String word="abap";
 			List<Character> elements = new ArrayList<Character>();
